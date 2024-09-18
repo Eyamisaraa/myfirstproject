@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Icon</title>
+  <style>
+    :root {
+    --size: 50vmin;
+    --bg: black;
+    --logo: white;
+    }
+
+    body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    }
+
+    .github {
+    width: var(--size);
+    aspect-ratio: 1;
+    background: var(--bg);
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    }
+    .github .head {
+    width: 64%;
+    height: 48%;
+    background: var(--logo);
+    position: absolute;
+    top: 24%;
+    border-radius: 50% 49% 40% 40%/45% 45% 45% 45%;
+    }
+    .github .head .ear {
+    position: absolute;
+    background: var(--logo);
+    border-radius: 0% 56% 20% 80%;
+    top: -2%;
+    width: 32%;
+    height: 40%;
+    }
+    .github .head .ear-left:before, .github .head .ear-right:before {
+    content: "";
+    position: absolute;
+    background: var(--logo);
+    border-radius: 50%;
+    width: 62%;
+    height: 15%;
+    transform: rotate(4deg);
+    top: -4%;
+    }
+    .github .head .ear-left {
+    left: 4%;
+    transform: rotate(16deg);
+    }
+    .github .head .ear-right {
+    right: 4%;
+    transform: rotate(345deg) scaleX(-1);
+    }
+    .github .body {
+    background: var(--logo);
+    width: 25%;
+    height: 35%;
+    bottom: -4%;
+    position: absolute;
+    border-radius: 34%;
+    }
+    .github .body:before, .github .body:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: var(--bg);
+    bottom: 18%;
+    border-radius: 50%;
+    }
+    .github .body:before {
+    left: -32%;
+    transform: rotate(327deg);
+    z-index: 1;
+    }
+    .github .body:after {
+    border-radius: 50%;
+    right: -32%;
+    transform: rotate(33deg);
+    }
+    .github .body .bottom {
+    position: absolute;
+    background: var(--logo);
+    width: 130%;
+    height: 20%;
+    bottom: 10%;
+    left: -15%;
+    }
+    .github .tail {
+    border-radius: 50%;
+    position: absolute;
+    width: 22%;
+    height: 13%;
+    background: var(--logo);
+    bottom: 14%;
+    left: 21%;
+    }
+    .github .tail:before, .github .tail:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    }
+    .github .tail:before {
+    width: 100%;
+    height: 100%;
+    bottom: 64%;
+    left: 10%;
+    background: var(--bg);
+    transform: rotate(337deg);
+    }
+    .github .tail:after {
+    width: 19%;
+    height: 52%;
+    transform: rotate(327deg);
+    bottom: 13%;
+    left: 2%;
+    background: var(--logo);
+    }
+    .github .tail .tip {
+    width: 36%;
+    height: 110%;
+    position: absolute;
+    background: var(--logo);
+    border-radius: 50%;
+    left: -25%;
+    top: -35%;
+    transform: rotate(322deg);
+    }
+    .github .tail .tip:before, .github .tail .tip:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    }
+    .github .tail .tip:before {
+    width: 43%;
+    height: 41%;
+    background: var(--logo);
+    transform: rotate(325deg);
+    top: -9%;
+    left: 35%;
+    }
+    .github .tail .tip:after {
+    width: 45%;
+    height: 103%;
+    background: var(--bg);
+    top: -6%;
+    left: -6%;
+    }
+  </style>
+</head>
+<body>
+  <div class="github">
+    <div class="tail">
+      <div class="tip"></div>
+    </div>
+    <div class="head">
+      <div class="ear ear-left"></div>
+      <div class="ear ear-right"></div>
+    </div>
+    <div class="body">
+      <div class="bottom"></div>
+    </div>
+  </div>
+</body>
+</html>
